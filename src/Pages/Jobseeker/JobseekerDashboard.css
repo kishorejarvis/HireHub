@@ -1,0 +1,48 @@
+.jobseeker-dashboard-page {
+  min-height: 100vh;
+  background: #f9fafb;
+  font-family: Inter, Segoe UI, sans-serif;
+}
+
+.jobseeker-dashboard-container {
+  max-width: 100%;          /* 1200px → 100% */
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 32px 32px;  /* side padding கொஞ்சம் கூட்டினேன் */
+  box-sizing: border-box;
+}
+
+.jobseeker-dashboard-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: start;
+  width: 100%;
+}
+
+.jobseeker-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+.jobseeker-dashboard-sidebar {
+  width: 100%;
+}
+
+@media (min-width: 940px) {
+  .jobseeker-dashboard-layout {
+    grid-template-columns: 300px 1fr;  /* 320px → 300px, 1fr full stretch */
+  }
+  .jobseeker-hero-grid {
+    grid-template-columns: 1.8fr 1fr auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .jobseeker-dashboard-container {
+    padding: 18px 48px 32px;  /* large screen-ல padding கூடும், space waste ஆகாது */
+  }
+}
